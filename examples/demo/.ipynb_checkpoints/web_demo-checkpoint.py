@@ -12,7 +12,7 @@ import gradio as gr
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, TextIteratorStreamer
 
-DEFAULT_CKPT_PATH = '../../models/Qwen2-0.5B-Instruct'
+DEFAULT_CKPT_PATH = 'Qwen/Qwen2-7B-Instruct'
 
 
 def _get_args():
@@ -133,10 +133,10 @@ def _launch_demo(args, model, tokenizer):
 (本WebUI基于Qwen2-Instruct打造，实现聊天机器人功能。)</center>""")
         gr.Markdown("""\
 <center><font size=4>
-Qwen2-7B-Instruct <a href="https://modelscope.cn/models/qwen/Qwen2-7B-Instruct/summary">🤖 </a> |
-<a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">🤗</a>&nbsp ｜
-Qwen2-72B-Instruct <a href="https://modelscope.cn/models/qwen/Qwen2-72B-Instruct/summary">🤖 </a> |
-<a href="https://huggingface.co/Qwen/Qwen2-72B-Instruct">🤗</a>&nbsp ｜
+Qwen2-7B-Instruct <a href="https://modelscope.cn/models/qwen/Qwen2-7B-Instruct/summary">🤖 </a> | 
+<a href="https://huggingface.co/Qwen/Qwen2-7B-Instruct">🤗</a>&nbsp ｜ 
+Qwen2-72B-Instruct <a href="https://modelscope.cn/models/qwen/Qwen2-72B-Instruct/summary">🤖 </a> | 
+<a href="https://huggingface.co/Qwen/Qwen2-72B-Instruct">🤗</a>&nbsp ｜ 
 &nbsp<a href="https://github.com/QwenLM/Qwen2">Github</a></center>""")
 
         chatbot = gr.Chatbot(label='Qwen2-Instruct', elem_classes="control-height")

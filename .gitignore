@@ -2,3 +2,7 @@
 docs/_build/
 docs/build/
 docs/**/*.mo
+models/
+.idea/
+.ipynv_checkpoints/
+*/.ipynv_checkpoints/
